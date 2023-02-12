@@ -1,7 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API\V1;
+use App\Http\Controllers\Controller;
 
+use App\Models\Invoice;
+use App\Models\Product;
 use App\Models\InvoiceItem;
 use App\Http\Requests\StoreInvoiceItemRequest;
 use App\Http\Requests\UpdateInvoiceItemRequest;
@@ -27,6 +30,36 @@ class InvoiceItemController extends Controller
     public function store(StoreInvoiceItemRequest $request)
     {
         //
+
+        $request->validate([
+            'product_id' => 'required',
+
+            'invoice_code' => 'required'
+        ]);
+
+        $invoice = Invoice::where('invoice_code', $request->invoice_code)->first();
+
+        $product = Product::find($request->product_id);
+
+        InvoiceItem::updateOrCreate([
+            'invoice_id' => $invoice->id,
+            'product_id' => $product->id
+        ],[
+            'invoice_id' => $invoice->id,
+            'product_id' => $product->id,
+            'price' => $product->price,
+            'qty' => 1,
+            'total_amount' => $product->price,
+
+        ]);
+
+        $invoiceTotal = InvoiceItem::where('invoice_id', $invoice->id )->get()->sum('total_amount');
+
+        Invoice::find($invoice->id)->update([
+            'total_amount' => $invoiceTotal
+        ]);
+
+
     }
 
     /**

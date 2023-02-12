@@ -17,9 +17,9 @@ class CreateInvoicesTable extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->string('invoice_code');
-            $table->integer('total_amount');
+            $table->integer('total_amount')->default(0);
             $table->string('type')->default('invoice');
-            
+
             $table->timestamps();
         });
     }

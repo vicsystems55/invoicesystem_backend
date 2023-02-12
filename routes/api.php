@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\API\V1\ProductController;
 use App\Http\Controllers\API\V1\ApiAuthController;
+use App\Http\Controllers\API\V1\InvoiceController;
+use App\Http\Controllers\API\V1\InvoiceItemController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -35,6 +37,14 @@ Route::group([
 
 
       Route::apiResource('products', ProductController::class);
+
+      Route::apiResource('invoices', InvoiceController::class)->middleware('auth:sanctum');
+
+      Route::apiResource('invoice-lines', InvoiceItemController::class)->middleware('auth:sanctum');
+
+
+
+
 
 
   });

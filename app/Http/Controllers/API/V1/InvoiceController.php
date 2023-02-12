@@ -29,6 +29,20 @@ class InvoiceController extends Controller
     public function store(StoreInvoiceRequest $request)
     {
         //
+
+        Invoice::updateOrCreate(
+            [
+                'user_id' => $request->user()->id,
+                'invoice_code' => $request->invoice_code
+            ],
+            [
+            'user_id' => $request->user()->id,
+            'invoice_code' => $request->invoice_code,
+            'total_amount' => 0
+
+        ]);
+
+        return Invoice::where('invoice_code', $request->invoice_code)->first();
     }
 
     /**
@@ -37,9 +51,13 @@ class InvoiceController extends Controller
      * @param  \App\Models\Invoice  $invoice
      * @return \Illuminate\Http\Response
      */
-    public function show(Invoice $invoice)
+    public function show($invoice_code)
     {
         //
+
+        $invoiceData = Invoice::with('invoice_items.products')->where('invoice_code', $invoice_code)->first();
+
+        return $invoiceData;
     }
 
     /**
