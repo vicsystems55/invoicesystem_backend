@@ -1,12 +1,12 @@
 <?php
 
-use App\Http\Controllers\API\V1\ProductController;
-use App\Http\Controllers\API\V1\ApiAuthController;
-use App\Http\Controllers\API\V1\InvoiceController;
-use App\Http\Controllers\API\V1\InvoiceItemController;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\V1\UserController;
+use App\Http\Controllers\API\V1\ApiAuthController;
+use App\Http\Controllers\API\V1\InvoiceController;
+use App\Http\Controllers\API\V1\ProductController;
+use App\Http\Controllers\API\V1\InvoiceItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +34,9 @@ Route::group([
         Route::post('register', [ApiAuthController::class, 'register']);
 
         Route::post('login', [ApiAuthController::class, 'login']);
+
+        Route::get('users', [UserController::class, 'users']);
+
 
 
       Route::apiResource('products', ProductController::class);
