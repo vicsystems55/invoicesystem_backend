@@ -112,6 +112,8 @@ class ApiAuthController extends Controller
 
            //code...
 
+           
+
            if (!Auth::attempt($request->only('email', 'password'))) {
 
             return response()->json([
