@@ -1,11 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\API\V1;
-use App\Http\Controllers\Controller;
-
 use App\Models\Invoice;
+
 use App\Models\Product;
 use App\Models\InvoiceItem;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\InvoiceItemResource;
 use App\Http\Requests\StoreInvoiceItemRequest;
 use App\Http\Requests\UpdateInvoiceItemRequest;
 
@@ -71,6 +73,12 @@ class InvoiceItemController extends Controller
     public function show(InvoiceItem $invoiceItem)
     {
         //
+
+        // return response()->json([
+        //     'data' =>[
+        //         'id' => $invoiceItem->id
+        //     ]
+        // ]);
     }
 
     /**
@@ -80,9 +88,40 @@ class InvoiceItemController extends Controller
      * @param  \App\Models\InvoiceItem  $invoiceItem
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateInvoiceItemRequest $request, InvoiceItem $invoiceItem)
+    public function update(Request $request, int $invoiceItem)
     {
         //
+
+
+
+
+
+        $item = InvoiceItem::find($invoiceItem);
+
+        $item->update([
+            'qty' => $request->qty,
+            'total_amount' => $request->qty * $item->price
+        ]);
+
+        $invoiceTotal = InvoiceItem::where('invoice_id', $request->invoiceId )->get()->sum('total_amount');
+
+        Invoice::find($request->invoiceId)->update([
+            'total_amount' => $invoiceTotal
+        ]);
+
+
+        $invoiceData = Invoice::with('invoice_items.products')->where('id', $request->invoiceId)->first();
+
+
+
+
+
+        return $data=[
+           'item'=> $item,
+           'invoiceData' => $invoiceData
+        ];
+
+
     }
 
     /**
