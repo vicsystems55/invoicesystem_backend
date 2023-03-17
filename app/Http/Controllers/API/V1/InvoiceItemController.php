@@ -130,8 +130,19 @@ class InvoiceItemController extends Controller
      * @param  \App\Models\InvoiceItem  $invoiceItem
      * @return \Illuminate\Http\Response
      */
-    public function destroy(InvoiceItem $invoiceItem)
+    public function destroy(Request $request, int $invoiceItem)
     {
         //
+
+        InvoiceItem::find($invoiceItem)->delete();
+
+        $invoiceTotal = InvoiceItem::where('invoice_id', $request->invoiceId )->get()->sum('total_amount');
+
+        Invoice::find($request->invoiceId)->update([
+            'total_amount' => $invoiceTotal
+        ]);
+
+
+       return $invoiceItem;
     }
 }
