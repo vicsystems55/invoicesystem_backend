@@ -157,7 +157,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   </tr>
   <tr data-element="blue-logo" data-label="Logo">
     <td align="center" class="center-text">
-      <img style="width:120px;border:0px;display: inline!important;" src="{{asset('mail_images/')}}images/logo.png" width="120" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
+      <img style="width:120px;border:0px;display: inline!important;" src="{{asset('mail_images')}}/images/logo.png" width="120" border="0" editable="true" data-icon data-image-edit data-url data-label="Logo" data-image-width alt="logo">
     </td>
   </tr>
   <tr>
@@ -175,7 +175,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
   <!-- blue-header -->
   <tr>
     <td align="center" class="img-responsive container-padding">
-      <img class="auto-width" style="display:block;width:100%;max-width:100%;border:0px;" data-image-edit data-url data-label="Header image" width="640" src="{{asset('mail_images/')}}images/header-13.jpg" border="0" editable="true" alt="picture">
+      <img class="auto-width" style="display:block;width:100%;max-width:100%;border:0px;" data-image-edit data-url data-label="Header image" width="640" src="{{asset('mail_images')}}/images/header-13.jpg" border="0" editable="true" alt="picture">
     </td>
   </tr>
   <!-- blue-header -->
@@ -238,7 +238,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
         </tr>
         <tr data-element="blue-title" data-label="Titles">
           <td align="center">
-            <img style="display:block;width:100%;max-width:32px;border:0px;" data-image-edit data-url data-label="Icon" width="32" src="{{asset('mail_images/')}}images/arrow-bl.png" border="0" editable="true" alt="icon">
+            <img style="display:block;width:100%;max-width:32px;border:0px;" data-image-edit data-url data-label="Icon" width="32" src="{{asset('mail_images')}}/images/arrow-bl.png" border="0" editable="true" alt="icon">
           </td>
         </tr>
         <tr data-element="blue-bm-usercode" data-label="User Code">
@@ -427,7 +427,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
       <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="width:100%;max-width:100%;">
         <tr data-element="blue-arrow-divider" data-label="Arrow">
           <td align="center">
-            <img style="width:50px;border:0px;display: inline!important;" src="{{asset('mail_images/')}}images/arrow.png" width="50" border="0" editable="true" data-icon data-image-edit data-url data-label="Arrow" data-image-width alt="arrow">
+            <img style="width:50px;border:0px;display: inline!important;" src="{{asset('mail_images')}}/images/arrow.png" width="50" border="0" editable="true" data-icon data-image-edit data-url data-label="Arrow" data-image-width alt="arrow">
           </td>
         </tr>
         <tr>
@@ -801,11 +801,11 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
             <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
               <tr data-element="blue-footer-icon" data-label="Buttons">
                 <td align="center">
-                  <img style="display:block;width:100%;max-width:117px;border:0px;" data-image-edit data-url data-label="App Store" width="117" src="{{asset('mail_images/')}}images/App-Store.png" border="0" editable="true" alt="icon">
+                  <img style="display:block;width:100%;max-width:117px;border:0px;" data-image-edit data-url data-label="App Store" width="117" src="{{asset('mail_images')}}/images/App-Store.png" border="0" editable="true" alt="icon">
                 </td>
                 <td width="20" style="width: 20px;"></td>
                 <td align="center">
-                  <img style="display:block;width:100%;max-width:117px;border:0px;" data-image-edit data-url data-label="Google play" width="117" src="{{asset('mail_images/')}}images/Google-play.png" border="0" editable="true" alt="icon"></td>
+                  <img style="display:block;width:100%;max-width:117px;border:0px;" data-image-edit data-url data-label="Google play" width="117" src="{{asset('mail_images')}}/images/Google-play.png" border="0" editable="true" alt="icon"></td>
               </tr>
             </table>
             <!-- column -->
@@ -913,7 +913,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
                     <tr>
                       <td width="10"></td>
                       <td align="center">
-                        <img style="width:36px;border:0px;display: inline!important;" src="{{asset('mail_images/')}}images/Facebook.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Facebook" data-image-width alt="icon">
+                        <img style="width:36px;border:0px;display: inline!important;" src="{{asset('mail_images')}}/images/Facebook.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Facebook" data-image-width alt="icon">
                       </td>
                       <td width="10"></td>
                     </tr>
@@ -924,7 +924,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
                     <tr>
                       <td width="10"></td>
                       <td align="center">
-                        <img style="width:36px;border:0px;display: inline!important;" src="{{asset('mail_images/')}}images/Instagram.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Instagram" data-image-width alt="icon">
+                        <img style="width:36px;border:0px;display: inline!important;" src="{{asset('mail_images')}}/images/Instagram.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Instagram" data-image-width alt="icon">
                       </td>
                       <td width="10"></td>
                     </tr>
@@ -935,7 +935,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
                     <tr>
                       <td width="10"></td>
                       <td align="center">
-                        <img style="width:36px;border:0px;display: inline!important;" src="{{asset('mail_images/')}}images/Twitter.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Twitter" data-image-width alt="icon">
+                        <img style="width:36px;border:0px;display: inline!important;" src="{{asset('mail_images')}}/images/Twitter.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Twitter" data-image-width alt="icon">
                       </td>
                       <td width="10"></td>
                     </tr>
@@ -946,7 +946,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
                     <tr>
                       <td width="10"></td>
                       <td align="center">
-                        <img style="width:36px;border:0px;display: inline!important;" src="{{asset('mail_images/')}}images/Pinterest.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Pinterest" data-image-width alt="icon">
+                        <img style="width:36px;border:0px;display: inline!important;" src="{{asset('mail_images')}}/images/Pinterest.png" width="36" border="0" editable="true" data-icon data-image-edit data-url data-label="Pinterest" data-image-width alt="icon">
                       </td>
                       <td width="10"></td>
                     </tr>
