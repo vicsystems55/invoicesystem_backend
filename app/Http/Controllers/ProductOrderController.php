@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Paystack;
 
 
+use Carbon\Carbon;
+use App\Models\User;
 use App\Models\Invoice;
 use App\Models\ProductOrder;
 use App\Mail\OrderPlacedMail;
@@ -22,6 +24,8 @@ class ProductOrderController extends Controller
     public function index()
     {
         //
+
+        return Paystack::getPaymentData();
     }
 
     /**
@@ -37,17 +41,31 @@ class ProductOrderController extends Controller
         if (Paystack::isTransactionVerificationValid($request->reference)) {
             # code...
 
+
+
+            // return Paystack::getPaymentData();
+
             $orderItems = Invoice::with('invoice_items.products')->where('invoice_code', $request->invoiceCode)->first();
 
+            $user = User::find($orderItems->user_id);
 
+            $productOrder = ProductOrder::create([
+                'user_id' => $user->id,
+                'invoice_id' => $orderItems->id,
+                'shipping_address' => $request->address,
+                'status' => 'pending',
+                'est_delivery_date' => Carbon::now()->addDays(7)
+            ]);
 
             $datax = [
                 'name' => $request->user()->name,
                 'trackingId' => $orderItems->invoice_code,
-                'orderItems' => $orderItems->invoice_items
+                'orderItems' => $orderItems->invoice_items,
+                'total_amount' => $orderItems->total_amount,
+                'shipping_address' => $productOrder->shipping_address
             ];
 
-            Mail::to('victorasuquob@gmail.com')
+            Mail::to($request->user()->email)
                 ->send(new OrderPlacedMail($datax));
 
 

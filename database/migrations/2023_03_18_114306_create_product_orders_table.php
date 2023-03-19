@@ -15,6 +15,12 @@ class CreateProductOrdersTable extends Migration
     {
         Schema::create('product_orders', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
+            $table->foreignId('invoice_id');
+            $table->string('shipping_address');
+            $table->string('status');
+            $table->string('est_delivery_date');
+
             $table->timestamps();
         });
     }
