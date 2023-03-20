@@ -30,6 +30,31 @@ class ProductController extends Controller
     public function store(StoreProductRequest $request)
     {
         //
+
+        // return $request->all();
+
+        $doc = $request->file('product_image');
+
+
+        $new_name = rand().".".$doc->getClientOriginalExtension();
+
+        $file1 = $doc->move(public_path('products'), $new_name);
+
+        $product = Product::create([
+            'name' => $request->name,
+            'description' => $request->description,
+            'img_url' => asset('products').'/'.$new_name,
+            'price' => $request->price,
+            'user_id' => $request->user_id,
+            'status' => 'active',
+            'discount' => 0,
+        ]);
+
+        return $product;
+
+
+
+
     }
 
     /**

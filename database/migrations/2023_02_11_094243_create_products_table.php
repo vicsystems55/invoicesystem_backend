@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('description');
             $table->string('img_url');
             $table->integer('price');
+            $table->foreignId('user_id')->nullable();
             $table->string('status')->default('active');
             $table->integer('discount')->default(0);
             $table->timestamps();
