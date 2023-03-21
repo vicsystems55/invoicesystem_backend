@@ -45,7 +45,7 @@ class PaymentController extends Controller
 
         $data = array(
             "amount" => 1000 * 100,
-            "reference" => '5g4g5485g8545'.rand(1000,999),
+            "reference" => '5g4g5485g8545'.rand(1000,9999),
             "email" => 'user@mail.com',
             "currency" => "NGN",
             "orderID" => 23456,
