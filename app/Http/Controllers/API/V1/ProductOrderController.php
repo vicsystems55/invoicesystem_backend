@@ -25,8 +25,24 @@ class ProductOrderController extends Controller
     public function index()
     {
         //
+        $product_orders = ProductOrder::with('users')->with('invoice')->latest()->get();
 
-        return Paystack::getPaymentData();
+        // $total_sales_amount = ProductOrder::with('invoice');
+        $total_sales_amount = Invoice::whereIn('id', ProductOrder::pluck('invoice_id'))->get()->sum('total_amount');
+
+        // return $total_sales_amount;
+
+        $total_customers = User::get()->count();
+
+        $invoices = Invoice::where('total_amount','>', 0)->get()->count();
+
+        return $data=[
+            'product_orders' => $product_orders,
+            'total_customers' => $total_customers,
+            'invoices'  => $invoices,
+            'total_sales_amount' => $total_sales_amount,
+            'timestamp' => Carbon::now()->format('d M, Y : h:m:s')
+        ];
     }
 
     /**
@@ -67,6 +83,11 @@ class ProductOrderController extends Controller
             ];
 
             Mail::to($request->user()->email)
+                ->send(new OrderPlacedMail($datax));
+
+                // mail store owner
+
+                Mail::to('victorasuquob@gmail.com')
                 ->send(new OrderPlacedMail($datax));
 
 

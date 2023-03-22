@@ -495,7 +495,7 @@ u + #body a {color:inherit;text-decoration:none;font-size:inherit;font-family:in
                   <td class="center-text" data-text-style="Options" align="left" style="font-family:'Barlow',Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;font-weight:400;font-style:normal;color:#333333;text-decoration:none;letter-spacing:0px;">
                       <singleline>
                         <div mc:edit data-text-edit>
-                          <strong>Price:</strong> {{$item->total_amount}}
+                          <strong>Price:</strong> N {{number_format($item->total_amount, 2)}}
                         </div>
                       </singleline>
                   </td>
