@@ -126,14 +126,14 @@ class ProductOrderController extends Controller
             ]);
 
             $datax = [
-                'name' => $request->user()->name,
+                'name' => $user->name,
                 'trackingId' => $orderItems->invoice_code,
                 'orderItems' => $orderItems->invoice_items,
                 'total_amount' => $orderItems->total_amount,
                 'shipping_address' => $productOrder->shipping_address
             ];
 
-            Mail::to($request->user()->email)
+            Mail::to($user->email)
                 ->send(new OrderPlacedMail($datax));
 
                 // mail store owner
