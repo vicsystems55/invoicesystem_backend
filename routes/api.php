@@ -49,6 +49,9 @@ Route::group([
 
       Route::apiResource('product-order', ProductOrderController::class)->middleware('auth:sanctum');
 
+      Route::get('mobile-product-order', [ProductOrderController::class, 'mobileProductOrder']);
+
+
       Route::apiResource('product-category', ProductCategoryController::class)->middleware('auth:sanctum');
 
       Route::apiResource('invoices', InvoiceController::class)->middleware('auth:sanctum');
