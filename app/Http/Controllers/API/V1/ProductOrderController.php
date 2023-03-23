@@ -141,7 +141,7 @@ class ProductOrderController extends Controller
                 Mail::to('victorasuquob@gmail.com')
                 ->send(new OrderPlacedMail($datax));
 
-                return redirect('https://ecomm.vicsystems.com.ng/payment-successful');
+                return redirect('https://ednascorner.vicsystems.com.ng/payment-successful');
 
 
         } else {
