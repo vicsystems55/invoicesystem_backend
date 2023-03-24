@@ -18,7 +18,7 @@ class ProductController extends Controller
     {
         //
 
-        return Product::get();
+        return Product::latest()->get();
     }
 
     /**
