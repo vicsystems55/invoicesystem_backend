@@ -61,6 +61,13 @@ class InvoiceItemController extends Controller
             'total_amount' => $invoiceTotal
         ]);
 
+        $totalCount = InvoiceItem::where('invoice_id', $invoice->id )->get()->count();
+
+
+        return [
+            'totalCount' => $totalCount
+        ];
+
 
     }
 
