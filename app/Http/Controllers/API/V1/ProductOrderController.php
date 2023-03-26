@@ -58,8 +58,6 @@ class ProductOrderController extends Controller
         if (Paystack::isTransactionVerificationValid($request->reference)) {
             # code...
 
-
-
             // return Paystack::getPaymentData();
 
             $orderItems = Invoice::with('invoice_items.products')->where('invoice_code', $request->invoiceCode)->first();
