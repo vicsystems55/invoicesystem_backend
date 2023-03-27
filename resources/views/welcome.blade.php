@@ -154,7 +154,7 @@
 		<div class="pattern-layer-two" data-tilt data-tilt-max="2" style="background-image: url(assets/images/background/pattern-10.png)"></div>
 		<div class="auto-container">
 			<div class="content">
-				<h1><span>Build an Amazing </span> <br> E-store <br> For your business</h1>
+				<h1><span>Get an Amazing </span> <br> E-store <br> For your business</h1>
 				<div class="text d-none">Consectetur adipiscing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore <a href="#">magna aliqua suspendisse</a></div>
 				<!-- Button Box -->
 				<div class="button-box text-center">
@@ -188,6 +188,12 @@
 						<img src="assets/images/resource/app-3.png" alt="" />
 					</div>
 				</div>
+
+                <div class="slide">
+					<div class="image">
+						<img src="assets/images/resource/app-4.png" alt="" />
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -204,7 +210,7 @@
 						<div class="content">
 							<span class="icon flaticon-iphone"></span>
 							<h5>Catalog Management</h5>
-							<div class="text">Sed ut perspiciatis uneomnis iste natus error sit voluptatem accusantium doloremque</div>
+							<div class="text">Sellers can easily manage their products categories inventory. Buyers can also filter products based on categories</div>
 						</div>
 					</div>
 				</div>
@@ -215,7 +221,7 @@
 						<div class="content">
 							<span class="icon flaticon-settings"></span>
 							<h5>Shopping cart and Checkout</h5>
-							<div class="text">Sed ut perspiciatis uneomnis iste natus error sit voluptatem accusantium doloremque</div>
+							<div class="text">Buyers can easily add products to cart, view their order summary and complete payments.</div>
 						</div>
 					</div>
 				</div>
@@ -225,8 +231,8 @@
 					<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
 						<div class="content">
 							<span class="icon flaticon-network"></span>
-							<h5>Payment Gateway Integration</h5>
-							<div class="text">Sed ut perspiciatis uneomnis iste natus error sit voluptatem accusantium doloremque</div>
+							<h5>Payment Integration</h5>
+							<div class="text">Buyers can use various payments methods. Sellers can receive payments directly to their bank accounts.</div>
 						</div>
 					</div>
 				</div>
@@ -237,7 +243,7 @@
 						<div class="content">
 							<span class="icon flaticon-stopwatch"></span>
 							<h5>Logistics and Delivery</h5>
-							<div class="text">Sed ut perspiciatis uneomnis iste natus error sit voluptatem accusantium doloremque</div>
+							<div class="text">Sellers can manage delivery rates across delivery zones. Buyers can get estimated delivery rates for their purchases</div>
 						</div>
 					</div>
 				</div>
@@ -248,7 +254,7 @@
 						<div class="content">
 							<span class="icon flaticon-user-2"></span>
 							<h5>Order Management</h5>
-							<div class="text">Sed ut perspiciatis uneomnis iste natus error sit voluptatem accusantium doloremque</div>
+							<div class="text">Sellers can view and manage their orders including order status, delivery details, and payment history.</div>
 						</div>
 					</div>
 				</div>
@@ -259,7 +265,7 @@
 						<div class="content">
 							<span class="icon flaticon-server"></span>
 							<h5>Analytics and Reporting</h5>
-							<div class="text">Sed ut perspiciatis uneomnis iste natus error sit voluptatem accusantium doloremque</div>
+							<div class="text">Sellers can track thier sales performance, customer behavior and web traffic.</div>
 						</div>
 					</div>
 				</div>
