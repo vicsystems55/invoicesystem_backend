@@ -18,8 +18,17 @@ class CreateProductOrdersTable extends Migration
             $table->foreignId('user_id');
             $table->foreignId('invoice_id');
             $table->string('shipping_address');
+            $table->string('town');
+            $table->string('country')->default('Nigeria');
+
             $table->string('status');
             $table->string('est_delivery_date');
+            $table->string('phone')->nullable();
+
+
+            $table->string('postalCode')->nullable();
+            $table->string('email')->nullable();
+            $table->string('orderNotes')->nullable();
 
             $table->timestamps();
         });

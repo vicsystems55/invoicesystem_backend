@@ -1,6 +1,6 @@
 /* Ximsa Business HTML Template */
 
-/*** 
+/***
 
 ====================================================================
 	Attachment Css Files
@@ -21,7 +21,7 @@
 @import url('jquery.fancybox.min.css');
 @import url('jquery.mCustomScrollbar.min.css');
 
-/*** 
+/***
 
 ====================================================================
 	Main Slider Section
@@ -63,7 +63,7 @@
 }
 
 .main-slider .tp-dottedoverlay{
-	background:none !important;	
+	background:none !important;
 }
 
 .main-slider .content-image{
@@ -76,7 +76,7 @@
 }
 
 .main-slider h1{
-	
+
 }
 
 .main-slider h1 span{
@@ -130,7 +130,7 @@
 	display:none !important;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Slider Section Two
@@ -174,7 +174,7 @@
 }
 
 .main-slider-two .tp-dottedoverlay{
-	background:none !important;	
+	background:none !important;
 }
 
 .main-slider-two .content-image{
@@ -210,7 +210,7 @@
 }
 
 .main-slider-two .text a:hover{
-	
+
 }
 
 .main-slider-two .services{
@@ -244,10 +244,10 @@
 
 .main-slider-two .tp-bannertimer,
 .main-slider-two .tp-bullets{
-	display:none !important;	
+	display:none !important;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Slider Section Three
@@ -302,7 +302,7 @@
 }
 
 .main-slider-three .tp-dottedoverlay{
-	background:none !important;	
+	background:none !important;
 }
 
 .main-slider-three .content-image{
@@ -374,10 +374,10 @@
 
 .main-slider-three .tp-bannertimer,
 .main-slider-three .tp-bullets{
-	display:none !important;	
+	display:none !important;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Slider Four Section
@@ -409,7 +409,7 @@
 }
 
 .main-slider-four .tp-dottedoverlay{
-	background:none !important;	
+	background:none !important;
 }
 
 .main-slider-four .content-image{
@@ -470,7 +470,7 @@
 	color:var(--color-fourtyseven);
 	margin-left:var(--margin-left-35);
 	padding-right:var(--padding-right-15);
-	font-family:var(--font-family-ibm); 
+	font-family:var(--font-family-ibm);
 }
 
 .main-slider-four .sign-up:before{
@@ -497,7 +497,7 @@
 	display:none !important;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Featured Section
@@ -630,7 +630,7 @@
 	left:0%;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Section
@@ -733,7 +733,7 @@
 }
 
 .company-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .company-tabs .tabs-content .content{
@@ -744,7 +744,7 @@
 	margin-top:var(--margin-top-35);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Agency Section
@@ -841,7 +841,7 @@
 	margin-top:var(--margin-top-30);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section
@@ -994,7 +994,7 @@
 }
 
 .service-block .inner-box h5{
-	
+
 }
 
 .service-block .inner-box h5 a{
@@ -1043,7 +1043,7 @@
 	margin-top:var(--margin-top-15);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section
@@ -1182,7 +1182,7 @@
 	margin-top:var(--margin-top-15);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section
@@ -1282,7 +1282,7 @@
 	text-align:center;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section
@@ -1426,7 +1426,7 @@
 	z-index:-1;
 	border:1px solid var(--color-ten);
 }
-	
+
 .testimonial-section .carousel-box{
 	position:relative;
 	padding:45px 45px;
@@ -1582,7 +1582,7 @@
 }
 
 .testimonial-block .author-box h5{
-	
+
 }
 
 .testimonial-block .author-box .designation{
@@ -1592,7 +1592,7 @@
 	color:var(--color-two);
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Section
@@ -1717,7 +1717,7 @@
 	width:100%;
 }
 
-/*** 
+/***
 
 ====================================================================
 	CTA Section
@@ -1764,7 +1764,7 @@
 	background-color:var(--color-two);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Quality Section
@@ -1834,7 +1834,7 @@
 	margin-bottom:var(--margin-bottom-30);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Featured Section
@@ -1995,7 +1995,7 @@
 	width:100%;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Section Two
@@ -2086,7 +2086,7 @@
 	margin-top:var(--margin-top-40);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery Section
@@ -2157,11 +2157,11 @@
 	top:0px;
 	right:0px;
 	bottom:0px;
-	
+
 	transition: -webkit-transform 0.4s ease;
 	transition: transform 0.4s ease;
 	transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-	
+
 	transition: all 900ms ease;
     -moz-transition: all 900ms ease;
     -webkit-transition: all 900ms ease;
@@ -2206,7 +2206,7 @@
 	transform:translateY(-50%);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Process Section
@@ -2263,7 +2263,7 @@
 	font-family: 'FontAwesome';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Partner Section
@@ -2371,7 +2371,7 @@
 	opacity:0.90;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Pricing Section
@@ -2495,7 +2495,7 @@
 	text-align:center;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section Two
@@ -2719,7 +2719,7 @@
 	font-family: 'FontAwesome';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section
@@ -2761,7 +2761,7 @@
 	top:0px;
 	right:0px;
 	bottom:0px;
-	opacity:0.87;
+	opacity:0.54;
 	background-color:var(--color-twelve);
 }
 
@@ -2803,7 +2803,7 @@
 	display:inline-flex;
 }
 
-/*** 
+/***
 
 ====================================================================
 	App Section
@@ -2843,7 +2843,7 @@
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Featured Section Three
@@ -2896,7 +2896,7 @@
 	margin-top:var(--margin-top-10);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Customize Section
@@ -2990,7 +2990,7 @@
 	overflow:hidden;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Process Section Two
@@ -3122,7 +3122,7 @@
 	margin-top:var(--margin-top-15);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Market Section
@@ -3176,7 +3176,7 @@
 	margin-bottom:var(--margin-bottom-40);
 }
 
-/*** 
+/***
 
 ====================================================================
 	App Section
@@ -3353,7 +3353,7 @@
 }
 
 .pricing-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .pricing-tabs .tabs-content .tab .price-block-two{
@@ -3547,7 +3547,7 @@
 	background-color:var(--color-six);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section Three
@@ -3697,7 +3697,7 @@
 }
 
 .testimonial-block-three .author-box h5{
-	
+
 }
 
 .testimonial-block-three .author-box .designation{
@@ -3707,7 +3707,7 @@
 	color:var(--color-two);
 }
 
-/*** 
+/***
 
 ====================================================================
 	App Section Two
@@ -3760,8 +3760,8 @@
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-}	
-	
+}
+
 .app-section-two .carousel-column{
 	position:relative;
 	margin-bottom:var(--margin-bottom-30);
@@ -3785,7 +3785,7 @@
 	transform:translateY(-40px);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Choice Section
@@ -3854,7 +3854,7 @@
 	color:var(--color-sixteen);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Business Section
@@ -3949,7 +3949,7 @@
 	margin-top:var(--margin-top-45);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section Two
@@ -4006,7 +4006,7 @@
 }
 
 .fact-counter-two .counter-column h6{
-	
+
 }
 
 .fact-counter-two .counter-column .inner .counter-text{
@@ -4019,7 +4019,7 @@
 	margin-top:var(--margin-top-15);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section Two
@@ -4046,7 +4046,7 @@
 }
 
 .app-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .prod-tabs .tabs-content .tab .title{
@@ -4143,7 +4143,7 @@
 	content: "\f178";
 	left:0px;
 	top:0px;
-	
+
 	color:var(--white-color);
 	font-size:var(--font-22);
 	font-family: "flaticon";
@@ -4177,7 +4177,7 @@
 	display:block;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Analysis Section
@@ -4284,7 +4284,7 @@
 	color:var(--text-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Pricing Section
@@ -4455,7 +4455,7 @@
 	background-color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Faq Section
@@ -4537,7 +4537,7 @@
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Accordion Style
@@ -4587,7 +4587,7 @@
 }
 
 .accordion-box .block .acc-btn.active{
-	
+
 }
 
 .accordion-box .block .icon-outer{
@@ -4637,7 +4637,7 @@
 }
 
 .accordion-box .block .acc-content.current{
-	display:block;	
+	display:block;
 }
 
 .accordion-box .block .content{
@@ -4702,7 +4702,7 @@
 	color:var(--color-two);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section Two
@@ -4752,7 +4752,7 @@
 	color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section Four
@@ -4885,7 +4885,7 @@
 	font-size:var(--font-14);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Page Title Section
@@ -5030,7 +5030,7 @@
 	margin-top:var(--margin-zero);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Featured Section Four
@@ -5087,7 +5087,7 @@
 	color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Satatistics Section
@@ -5231,7 +5231,7 @@
     position: absolute;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Section
@@ -5340,7 +5340,7 @@
 }
 
 .team-block .inner-box .lower-content h6{
-	
+
 }
 
 .team-block .inner-box .lower-content h6 a{
@@ -5360,7 +5360,7 @@
 	color:var(--text-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Page Section
@@ -5373,7 +5373,7 @@
 	padding:110px 0px 70px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Skill Section
@@ -5440,7 +5440,7 @@
 	position:relative;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Faq Section Two
@@ -5473,7 +5473,7 @@
 	position:relative;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Faq Section Three
@@ -5493,7 +5493,7 @@
 	margin-bottom:var(--margin-bottom-30);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Digital Section
@@ -5527,7 +5527,7 @@
 	background-color:var(--color-five);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sidebar Page Container
@@ -5858,7 +5858,7 @@
 	font-family: "flaticon";
 }
 
-/*** 
+/***
 
 ====================================================================
 	Project Page Section
@@ -6076,7 +6076,7 @@
 	font-size:var(--font-24);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Project Detail Section
@@ -6758,7 +6758,7 @@
 	font-family: 'FontAwesome';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Styled Pagination
@@ -7173,7 +7173,7 @@
 	font-family: 'FontAwesome';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comments Area
@@ -7222,7 +7222,7 @@
 }
 
 .sidebar-page-container .comments-area .reply-comment{
-	margin-left:var(--margin-left-40);	
+	margin-left:var(--margin-left-40);
 }
 
 .sidebar-page-container .comments-area .comment-box .author-thumb{
@@ -7290,7 +7290,7 @@
 	color:var(--color-two);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comment Form
@@ -7382,7 +7382,7 @@
 	margin-bottom:var(--margin-bottom-20);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Banner Section
@@ -7540,7 +7540,7 @@
 	margin:0 auto;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Form
@@ -7619,7 +7619,7 @@
 .contact-form input.error,
 .contact-form select.error,
 .contact-form textarea.error{
-	border-color:#ff0000 !important;	
+	border-color:#ff0000 !important;
 }
 
 .contact-form label.error{
@@ -7630,7 +7630,7 @@
 	text-transform:uppercase;
 	font-size:12px;
 	color:#ff0000;
-	font-weight:500;	
+	font-weight:500;
 }
 
 .tp-mask-wrap{
@@ -7667,7 +7667,7 @@
 .banner-section-two .content-column h1{
 	line-height:72px;
 	color:var(--white-color);
-	font-family:var(--font-family-barlow); 
+	font-family:var(--font-family-barlow);
 }
 
 .banner-section-two .content-column h1 span{
@@ -7764,7 +7764,7 @@
 
 .coin-block .upper-box h4{
 	color:var(--white-color);
-	font-family:var(--font-family-barlow); 
+	font-family:var(--font-family-barlow);
 }
 
 .coin-block .upper-box .coin-name{
@@ -7772,7 +7772,7 @@
 	font-size:var(--font-16);
 	color:var(--color-thirtyone);
 	margin-top:var(--margin-top-5);
-	font-family:var(--font-family-barlow); 
+	font-family:var(--font-family-barlow);
 }
 
 .coin-block .price{
@@ -7782,7 +7782,7 @@
 	font-size:var(--font-48);
 	color:var(--white-color);
 	margin-top:var(--margin-top-20);
-	font-family:var(--font-family-barlow); 
+	font-family:var(--font-family-barlow);
 }
 
 .coin-block .price sup{
@@ -7807,7 +7807,7 @@
 	font-size:var(--font-15);
 	color:var(--white-color);
 	margin-top:var(--margin-top-30);
-	font-family:var(--font-family-barlow); 
+	font-family:var(--font-family-barlow);
 	background-color:var(--color-twentyfive);
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
@@ -7942,7 +7942,7 @@
 	font-style:normal;
 	font-size:var(--font-24);
 	margin-left:var(--margin-left-5);
-	
+
 	color:var(--color-thirtyfive);
 	background: linear-gradient(to right, var(--color-thirtyfive) 0%, var(--color-thirtysix) 50%, var(--color-thirtyseven) 100%);
 	-webkit-background-clip: text;
@@ -8736,7 +8736,7 @@
 
 .crypto-tabs .tab-btns .tab-btn:hover,
 .crypto-tabs .tab-btns .tab-btn.active-btn{
-	
+
 }
 
 .crypto-tabs .tabs-content{
@@ -8750,7 +8750,7 @@
 }
 
 .crypto-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .crypto-tabs .tabs-content h5{
@@ -8839,11 +8839,11 @@
 	max-width:100%;
 	width:auto;
 	display:inline-block;
-	
+
 	opacity:0.3;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	
+
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
@@ -8927,7 +8927,7 @@
 	bottom:-40px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Featured Section Five
@@ -9042,7 +9042,7 @@
 	font-family:var(--font-family-ibm);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Steps Section
@@ -9069,11 +9069,11 @@
 	font-family:var(--font-family-ibm);
 	opacity:0.50;
 	color:var(--color-white);
-	
+
 	background: linear-gradient(to top, var(--color-sixtyone) 0%, var(--white-color) 60%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	
+
 }
 
 .step-block{
@@ -9105,7 +9105,7 @@
 
 .step-block .content-column h2{
 	position:relative;
-	font-weight:700; 
+	font-weight:700;
 	line-height:45px;
 	font-size:var(--font-36);
 	margin-top:var(--margin-top-10);
@@ -9133,7 +9133,7 @@
 	font-family: "Flaticon2";
 	color:var(--color-sixtythree);
 }
-	
+
 .step-block .steps-list li{
 	position:relative;
 	line-height:30px;
@@ -9183,7 +9183,7 @@
 	right:150px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Steps Section
@@ -9290,7 +9290,7 @@
 }
 
 .cards-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .cards-tabs .tabs-content .image{
@@ -9320,7 +9320,7 @@
 	margin-top:var(--margin-top-40);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section Five
@@ -9529,11 +9529,11 @@
 	max-width:100%;
 	width:auto;
 	display:inline-block;
-	
+
 	opacity:0.4;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	
+
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;

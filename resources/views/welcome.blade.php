@@ -525,7 +525,7 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered light">
-				<h2><span>Apps Screnshots </span> <br> Unique UI Applications</h2>
+				<h2><span></span> <br> Apps Screnshots </h2>
 			</div>
 			<div class="app-carousel-three owl-carousel owl-theme">
 				<!-- Slide -->
@@ -622,7 +622,7 @@
 				<div class="buttons-outer">
 					<ul class="tab-buttons clearfix">
 						<li data-tab="#prod-monthly" class="tab-btn active-btn">Monthly</li>
-						<li data-tab="#prod-yearly" class="tab-btn">Yearly</li>
+						{{-- <li data-tab="#prod-yearly" class="tab-btn">Yearly</li> --}}
 					</ul>
 				</div>
 
@@ -638,7 +638,7 @@
 								<div class="price-block-two col-lg-4 col-md-6 col-sm-12">
 									<div class="inner-box">
 										<div class="title transition-300ms">Basic Plan</div>
-										<div class="price transition-300ms"><sup>$</sup>19.58</div>
+										<div class="price transition-300ms"><sup>₦</sup>5k</div>
 										<div class="text transition-300ms">Sit amet consectetur adipiscin elit <br> eiusmoe tempor incidide </div>
 										<ul class="price-list">
 											<li>Social Media Marketing</li>
@@ -656,8 +656,8 @@
 								<div class="price-block-two active col-lg-4 col-md-6 col-sm-12">
 									<div class="inner-box">
 										<div class="popular">Save 25%</div>
-										<div class="title transition-300ms">Standard Plan</div>
-										<div class="price transition-300ms"><sup>$</sup>39.58</div>
+										<div class="title transition-300ms">Premium Plan</div>
+										<div class="price transition-300ms"><sup>₦</sup>12k</div>
 										<div class="text transition-300ms">Sit amet consectetur adipiscin elit <br> eiusmoe tempor incidide </div>
 										<ul class="price-list">
 											<li>Social Media Marketing</li>
@@ -674,8 +674,8 @@
 								<!-- Price Block -->
 								<div class="price-block-two col-lg-4 col-md-6 col-sm-12">
 									<div class="inner-box">
-										<div class="title transition-300ms">Premium Plan</div>
-										<div class="price transition-300ms"><sup>$</sup>99.58</div>
+										<div class="title transition-300ms">Enterprise Plan</div>
+										<div class="price transition-300ms"><sup>₦</sup>20k</div>
 										<div class="text transition-300ms">Sit amet consectetur adipiscin elit <br> eiusmoe tempor incidide </div>
 										<ul class="price-list">
 											<li>Social Media Marketing</li>
@@ -702,7 +702,7 @@
 								<div class="price-block-two col-lg-4 col-md-6 col-sm-12">
 									<div class="inner-box">
 										<div class="title transition-300ms">Basic Plan</div>
-										<div class="price transition-300ms"><sup>$</sup>19.58</div>
+										<div class="price transition-300ms"><sup>₦</sup>19.58</div>
 										<div class="text transition-300ms">Sit amet consectetur adipiscin elit <br> eiusmoe tempor incidide </div>
 										<ul class="price-list">
 											<li>Social Media Marketing</li>
@@ -721,7 +721,7 @@
 									<div class="inner-box">
 										<div class="popular">Save 25%</div>
 										<div class="title transition-300ms">Standard Plan</div>
-										<div class="price transition-300ms"><sup>$</sup>39.58</div>
+										<div class="price transition-300ms"><sup>₦</sup>39.58</div>
 										<div class="text transition-300ms">Sit amet consectetur adipiscin elit <br> eiusmoe tempor incidide </div>
 										<ul class="price-list">
 											<li>Social Media Marketing</li>
@@ -739,7 +739,7 @@
 								<div class="price-block-two col-lg-4 col-md-6 col-sm-12">
 									<div class="inner-box">
 										<div class="title transition-300ms">Premium Plan</div>
-										<div class="price transition-300ms"><sup>$</sup>99.58</div>
+										<div class="price transition-300ms"><sup>₦</sup>99.58</div>
 										<div class="text transition-300ms">Sit amet consectetur adipiscin elit <br> eiusmoe tempor incidide </div>
 										<ul class="price-list">
 											<li>Social Media Marketing</li>
@@ -785,7 +785,7 @@
 							<!-- Sec Title -->
 							<div class="sec-title">
 								<div class="title">Clients Testimonials</div>
-								<h2><span>We’ve 536+ Clients</span> <br> Say About Solutions</h2>
+								<h2><span>What Our Clients</span> <br> Say About Our Solutions</h2>
 							</div>
 
 							<div class="single-item-carousel owl-carousel owl-theme">
@@ -794,14 +794,14 @@
 								<div class="testimonial-block-three">
 									<div class="inner-box">
 										<span class="quote-icon flaticon-right-quotes-symbol"></span>
-										<div class="text">Sed ut perspiciatis unde omnis iste natus error sit tium doloremque laudantium totam rem aperiam eaque quae abnves ntore veritatis et quasi archite cto beatae see vitae dicta sunt explicabo.</div>
+										<div class="text">I never knew running an online store in Nigeria could be this seamless until I used this ecommerce solution. It's been a game-changer for my business</div>
 										<div class="author-box">
 											<div class="box-inner">
 												<span class="author-image">
 													<img src="assets/images/resource/author-1.jpg" alt="" />
 												</span>
-												<h5>Somalia D. Silva</h5>
-												<div class="designation">Business Consultant</div>
+												<h5>VICTOR PRINCESS</h5>
+												<div class="designation">Store Owner / CEO</div>
 											</div>
 										</div>
 									</div>
@@ -811,14 +811,14 @@
 								<div class="testimonial-block-three">
 									<div class="inner-box">
 										<span class="quote-icon flaticon-right-quotes-symbol"></span>
-										<div class="text">Sed ut perspiciatis unde omnis iste natus error sit tium doloremque laudantium totam rem aperiam eaque quae abnves ntore veritatis et quasi archite cto beatae see vitae dicta sunt explicabo.</div>
+										<div class="text">The ecommerce solution offered by this company has revolutionized the way I do business in Nigeria. It's easy to use and highly efficient.</div>
 										<div class="author-box">
 											<div class="box-inner">
 												<span class="author-image">
-													<img src="assets/images/resource/author-1.jpg" alt="" />
+													<img src="assets/images/resource/author-6.png" alt="" />
 												</span>
-												<h5>Somalia D. Silva</h5>
-												<div class="designation">Business Consultant</div>
+												<h5>INYANG-OTU UKEME</h5>
+												<div class="designation">Media Manager</div>
 											</div>
 										</div>
 									</div>
@@ -828,14 +828,14 @@
 								<div class="testimonial-block-three">
 									<div class="inner-box">
 										<span class="quote-icon flaticon-right-quotes-symbol"></span>
-										<div class="text">Sed ut perspiciatis unde omnis iste natus error sit tium doloremque laudantium totam rem aperiam eaque quae abnves ntore veritatis et quasi archite cto beatae see vitae dicta sunt explicabo.</div>
+										<div class="text">I highly recommend this ecommerce solution to anyone looking to grow their business in Nigeria. It's reliable, secure, and offers excellent customer support.</div>
 										<div class="author-box">
 											<div class="box-inner">
 												<span class="author-image">
-													<img src="assets/images/resource/author-1.jpg" alt="" />
+													<img src="assets/images/resource/author-7.png" alt="" />
 												</span>
-												<h5>Somalia D. Silva</h5>
-												<div class="designation">Business Consultant</div>
+												<h5>CHARLES FRED JNR.</h5>
+												<div class="designation">President and Founder, PHOENIXGN</div>
 											</div>
 										</div>
 									</div>
@@ -1083,7 +1083,7 @@
 
 			<!-- Footer Bottom -->
 			<div class="footer-bottom">
-				<div class="copyright">&copy; 2022 <a href="https://themeforest.net/user/themexriver">Ximsa.</a> All rights reserved</div>
+				<div class="copyright">&copy; {{\Carbon\Carbon::now()->year()}} <a href="https://vicsystems.com.ng">vicSystems Technologies Ltd..</a> All rights reserved</div>
 			</div>
 
 		</div>

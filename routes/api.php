@@ -44,6 +44,9 @@ Route::group([
 
       Route::apiResource('products', ProductController::class);
 
+      Route::get('productsx', [ProductController::class,'products']);
+
+
       Route::post('initiate-pay', [PaymentController::class, 'initiatepay']);
 
 

@@ -69,7 +69,14 @@ class ProductOrderController extends Controller
                 'invoice_id' => $orderItems->id,
                 'shipping_address' => $request->address,
                 'status' => 'pending',
-                'est_delivery_date' => Carbon::now()->addDays(7)
+                'est_delivery_date' => Carbon::now()->addDays(7),
+
+                'phone' => $request->phone,
+                'town' => $request->town,
+                'country' => $request->country,
+                'postalCode' => $request->postalCode,
+                'email' => $request->email,
+                'orderNotes' => $request->orderNotes,
             ]);
 
             $datax = [

@@ -21,6 +21,13 @@ class ProductController extends Controller
         return Product::latest()->get();
     }
 
+    public function products()
+    {
+        //
+
+        return Product::latest()->paginate(3);
+    }
+
     /**
      * Store a newly created resource in storage.
      *

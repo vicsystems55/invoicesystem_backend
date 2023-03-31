@@ -19,6 +19,8 @@ class CreateInvoicesTable extends Migration
             $table->string('invoice_code');
             $table->integer('total_amount')->default(0);
             $table->string('type')->default('invoice');
+            $table->integer('discount')->default(0);
+
 
             $table->timestamps();
         });
