@@ -526,6 +526,8 @@
 			<!-- Sec Title -->
 			<div class="sec-title centered light">
 				<h2><span></span> <br> Apps Screnshots </h2>
+
+                
 			</div>
 			<div class="app-carousel-three owl-carousel owl-theme">
 				<!-- Slide -->
