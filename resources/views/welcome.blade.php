@@ -13,8 +13,8 @@
 				<div class="text d-none">Consectetur adipiscing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore <a href="#">magna aliqua suspendisse</a></div>
 				<!-- Button Box -->
 				<div class="button-box text-center">
-					<a href="/get-started" class="theme-btn btn-style-eight"><span class="txt">Get Started Today</span></a>
-					{{-- <a href="#" class="theme-btn btn-style-seven"><span class="txt"><i class="flaticon-apple-logo"></i> Download for iOS</span></a> --}}
+					<a href="/get-started" class="theme-btn btn-style-eight"><span class="txt"><i class="flaticon-rocket"></i>  Get Started</span></a>
+					<a href="https://store.vicsystems.com.ng/" class="theme-btn btn-style-seven"><span class="txt"><i class="flaticon-eye"></i> Sneak Peak</span></a>
 				</div>
 			</div>
 		</div>
