@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/get-started', function () {
+    return view('register');
+});

@@ -1,151 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Plug & Play Eccomerce | vicSystems</title>
-<!-- Stylesheets -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
+@extends('layouts.app')
 
-<!-- Revolution Slider -->
-<link href="assets/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
-<link href="assets/plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
-<link href="assets/plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
-
-<link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/responsive.css" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-</head>
-
-<body class="hidden-bar-wrapper">
-
-<div class="page-wrapper">
-
-	<!-- Preloader -->
-    <div class="preloader"></div>
-	<!-- End Preloader -->
-
- 	<!-- Header Style Three -->
-    <header class="main-header header-style-three">
-
-		<!-- Header Lower -->
-        <div class="header-lower">
-        	<div class="auto-container">
-            	<div class="inner-container clearfix">
-					<!-- Logo Box -->
-					<div class="pull-left logo-box">
-						<div class="logo"><a href="index.html"><img src="assets/images/logo-4.png" alt="" title=""></a></div>
-					</div>
-
-					<!-- Nav Outer -->
-					<div class="nav-outer clearfix">
-						<!-- Mobile Navigation Toggler -->
-						<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-						<!-- Main Menu -->
-						<nav class="main-menu navbar-expand-md">
-							<div class="navbar-header">
-								<!-- Toggle Button -->
-								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-
-							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-								<ul class="navigation clearfix">
-									<li class="current "><a href="#">Home</a>
-
-									</li>
-									<li class=""><a href="#">About</a>
-
-									</li>
-
-{{--
-									<li class=""><a href="#">Blog</a>
-
-									</li> --}}
-									<li><a href="/contact">Contact</a></li>
-								</ul>
-							</div>
-							<!-- Search Btn -->
-							<div class="search-box-btn transition-300ms"><span class="icon fa fa-search"></span></div>
-						</nav>
-
-						<!-- Main Menu End-->
-						<div class="outer-box clearfix">
-
-							<!-- Phone Box -->
-							<div class="phone-box">
-								<div class="box-inner">
-									<span class="icon fa fa-phone"></span>
-									<a href="tel:+0123-456-7899"><i>Call :</i> +23(803) 783 5670</a>
-								</div>
-							</div>
-							<!-- End Phone Box -->
-
-							<!-- Language Dropdown -->
-
-							<!-- End Language Dropdown -->
-
-							<!-- Button Box -->
-							<div class="button-box">
-								<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Get Started <i class="fa fa-angle-right"></i></span></a>
-							</div>
-							<!-- End Button Box -->
-
-						</div>
-					</div>
-				</div>
-            </div>
-        </div>
-        <!-- End Header Lower -->
-
-		<!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="auto-container clearfix">
-                <!--Logo-->
-                <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="assets/images/logo-5.png" alt="" title=""></a>
-                </div>
-                <!--Right Col-->
-                <div class="pull-right">
-
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <!--Keep This Empty / Menu will come through Javascript-->
-                    </nav>
-					<!-- Main Menu End-->
-
-					<!-- Mobile Navigation Toggler -->
-					<div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
-
-                </div>
-            </div>
-        </div><!-- End Sticky Menu -->
-
-		<!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
-
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-small.png" alt="" title=""></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-            </nav>
-        </div><!-- End Mobile Menu -->
-
-    </header>
+@section('content')
     <!-- End Main Header -->
 
 	<!-- Banner Section -->
@@ -158,8 +13,8 @@
 				<div class="text d-none">Consectetur adipiscing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore <a href="#">magna aliqua suspendisse</a></div>
 				<!-- Button Box -->
 				<div class="button-box text-center">
-					<a href="#" class="theme-btn btn-style-eight"><span class="txt"><i class="flaticon-google-play"></i> Download for Android</span></a>
-					<a href="#" class="theme-btn btn-style-seven"><span class="txt"><i class="flaticon-apple-logo"></i> Download for iOS</span></a>
+					<a href="/get-started" class="theme-btn btn-style-eight"><span class="txt">Get Started Today</span></a>
+					{{-- <a href="#" class="theme-btn btn-style-seven"><span class="txt"><i class="flaticon-apple-logo"></i> Download for iOS</span></a> --}}
 				</div>
 			</div>
 		</div>
@@ -286,14 +141,14 @@
 
 						<!-- Sec Title -->
 						<div class="sec-title">
-							<h2><span>Personalize Home </span> <br> Screen Customizable</h2>
-							<div class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totamre aperiam eaque abillo inventore veritatis  quasi architecto beatae</div>
+							<h2><span>Why choose us </span></h2>
+							<div class="text">Plug & Play Ecommerce is aimed at relieving you our clients from the hassle of taking your business sales process online. Supply the basic information of your business, we handle the rest. Don't have a registered company or a cooperate account? Still does not stop you from selling online.</div>
 						</div>
 						<!-- Lists -->
 						<ul class="lists">
-							<li><strong>Optimize Website</strong>On the other hand we denounce with righteous indigntion and dislike men who are so beguiled and demora</li>
-							<li><strong>Analyze Competitors</strong>On the other hand we denounce with righteous indigntion and dislike men who are so beguiled and demora</li>
-							<li><strong>Study Customers</strong>On the other hand we denounce with righteous indigntion and dislike men who are so beguiled and demora</li>
+							<li><strong>Organize Catalogue</strong>With simple click you can organize your products on your store, giving your potential buyers a smooth experience viewing your catalogue</li>
+							<li><strong>Collect Payments</strong>Get payments into your local bank account within 48 hours.</li>
+							<li><strong>Study Customers</strong>Get instant notification via email and sms about new orders. Login to your store to view more info and complete the customers orders.</li>
 						</ul>
 
 					</div>
@@ -358,30 +213,30 @@
 				<h2><span>Working Process </span> <br> Simple steps to get started.</h2>
 			</div>
 			<div class="row clearfix">
-
+                <div class="process-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="number">01</span>
+							<span class="icon flaticon-user-2"></span>
+						</div>
+						<h5>Create an Account</h5>
+						<div class="text">Define your store identity</div>
+					</div>
+				</div>
 				<!-- Process Block Two -->
 				<div class="process-block-two col-lg-4 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="icon-box">
-							<span class="number">01</span>
+							<span class="number">02</span>
 							<span class="icon flaticon-cloud-computing"></span>
 						</div>
-						<h5>Download Apps</h5>
-						<div class="text">Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem</div>
+						<h5>Access Your Store</h5>
+						<div class="text">Gain access to your store,<br> update products and get started</div>
 					</div>
 				</div>
 
 				<!-- Process Block Two -->
-				<div class="process-block-two col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="icon-box">
-							<span class="number">02</span>
-							<span class="icon flaticon-user-2"></span>
-						</div>
-						<h5>Create an Account</h5>
-						<div class="text">Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem</div>
-					</div>
-				</div>
+
 
 				<!-- Process Block Two -->
 				<div class="process-block-two col-lg-4 col-md-6 col-sm-12">
@@ -390,8 +245,8 @@
 							<span class="number">03</span>
 							<span class="icon flaticon-badge"></span>
 						</div>
-						<h5>Get your Results</h5>
-						<div class="text">Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem</div>
+						<h5>Get Results</h5>
+						<div class="text"> Start collecting and completing orders. </div>
 					</div>
 				</div>
 
@@ -471,19 +326,19 @@
 	<!-- End Market Section -->
 
 	<!-- Partner Section -->
-	<section class="partner-section">
+	<section class="partner-section ">
 		<div class="auto-container">
 			<div class="inner-container">
 				<div class="row clearfix">
 					<!-- Title Column -->
 					<div class="title-column col-lg-5 col-md-12 col-sm-12">
 						<div class="inner-column">
-							<h4>We Have More Then <span>5683+</span> <br> Global Premium</h4>
-							<a href="service-detail.html" class="learn-more">Become a Partner</a>
+							<h4>Our Partners</h4>
+
 						</div>
 					</div>
 					<!-- Partners Column -->
-					<div class="partners-column col-lg-7 col-md-12 col-sm-12">
+					<div class="partners-column col-lg-6 col-md-12 col-sm-12">
 						<div class="inner-column">
 							<div class="row clearfix">
 								<!-- Partner Column -->
@@ -499,17 +354,7 @@
 									<a href="#"><img src="assets/images/clients/3.png" alt="" /></a>
 								</div>
 								<!-- Partner Column -->
-								<div class="column col-lg-4 col-md-4 col-sm-6">
-									<a href="#"><img src="assets/images/clients/4.png" alt="" /></a>
-								</div>
-								<!-- Partner Column -->
-								<div class="column col-lg-4 col-md-4 col-sm-6">
-									<a href="#"><img src="assets/images/clients/5.png" alt="" /></a>
-								</div>
-								<!-- Partner Column -->
-								<div class="column col-lg-4 col-md-4 col-sm-6">
-									<a href="#"><img src="assets/images/clients/6.png" alt="" /></a>
-								</div>
+
 							</div>
 						</div>
 					</div>
@@ -527,7 +372,7 @@
 			<div class="sec-title centered light">
 				<h2><span></span> <br> Apps Screnshots </h2>
 
-                
+
 			</div>
 			<div class="app-carousel-three owl-carousel owl-theme">
 				<!-- Slide -->
@@ -641,12 +486,16 @@
 									<div class="inner-box">
 										<div class="title transition-300ms">Basic Plan</div>
 										<div class="price transition-300ms"><sup>₦</sup>5k</div>
-										<div class="text transition-300ms">Sit amet consectetur adipiscin elit <br> eiusmoe tempor incidide </div>
+										{{-- <div class="text transition-300ms">Sit amet consectetur adipiscin elit <br> eiusmoe tempor incidide </div> --}}
 										<ul class="price-list">
-											<li>Social Media Marketing</li>
-											<li>Web Development</li>
-											<li class="hide">Digital Analysis</li>
+											<li>Maximum of 10 Products</li>
+											<li>Sellers dashboard</li>
+											<li class="hide">Custom domain</li>
 											<li class="hide">Technical Support</li>
+											<li class="hide">Full customization</li>
+											<li class="hide">Mobile Application</li>
+
+
 										</ul>
 										<div class="button-box">
 											<a href="#" class="theme-btn plan-btn">Choose Plan <span class="arrow flaticon-next-3"></span></a>
@@ -657,15 +506,18 @@
 								<!-- Price Block -->
 								<div class="price-block-two active col-lg-4 col-md-6 col-sm-12">
 									<div class="inner-box">
-										<div class="popular">Save 25%</div>
+										<div class="popular">POPULAR</div>
 										<div class="title transition-300ms">Premium Plan</div>
 										<div class="price transition-300ms"><sup>₦</sup>12k</div>
-										<div class="text transition-300ms">Sit amet consectetur adipiscin elit <br> eiusmoe tempor incidide </div>
+
 										<ul class="price-list">
-											<li>Social Media Marketing</li>
-											<li>Web Development</li>
-											<li class="hide">Digital Analysis</li>
+                                            <li>Maximum of 20 Products</li>
+											<li>Sellers dashboard</li>
+											<li class="">Custom domain</li>
 											<li class="hide">Technical Support</li>
+											<li class="hide">Full customization</li>
+											<li class="hide">Mobile Application</li>
+
 										</ul>
 										<div class="button-box">
 											<a href="#" class="theme-btn plan-btn">Choose Plan <span class="arrow flaticon-next-3"></span></a>
@@ -678,12 +530,15 @@
 									<div class="inner-box">
 										<div class="title transition-300ms">Enterprise Plan</div>
 										<div class="price transition-300ms"><sup>₦</sup>20k</div>
-										<div class="text transition-300ms">Sit amet consectetur adipiscin elit <br> eiusmoe tempor incidide </div>
+
 										<ul class="price-list">
-											<li>Social Media Marketing</li>
-											<li>Web Development</li>
-											<li class="hide">Digital Analysis</li>
-											<li class="hide">Technical Support</li>
+											<li>Unlimited Products</li>
+											<li>Sellers dashboard</li>
+											<li class="">Custom domain</li>
+											<li class="">Premium Technical Support</li>
+											<li class="">Full customization</li>
+											<li class="">Mobile Application</li>
+
 										</ul>
 										<div class="button-box">
 											<a href="#" class="theme-btn plan-btn">Choose Plan <span class="arrow flaticon-next-3"></span></a>
@@ -928,220 +783,10 @@
 	<!-- App Section Two -->
 
 	<!-- News Section -->
-	<section class="news-section d-none">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<h2><span>Something Knows Us </span> <br> Our News & Blog</h2>
-			</div>
-			<!-- End Sec Title -->
-			<div class="row clearfix">
 
-				<!-- News Block -->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="blog-detail.html"><img src="assets/images/resource/news-4.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<ul class="post-info">
-								<li>Design</li>
-								<li>2022, Feb 25</li>
-							</ul>
-							<h5><a href="blog-detail.html">Meet Touch Design Mobile Interfaces New Smas</a></h5>
-							<a href="blog-detail.html" class="learn-more">Read More</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- News Block -->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="blog-detail.html"><img src="assets/images/resource/news-5.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<ul class="post-info">
-								<li>Design</li>
-								<li>2022, Feb 25</li>
-							</ul>
-							<h5><a href="blog-detail.html">Powerful Termimand Line Tools For Modern</a></h5>
-							<a href="blog-detail.html" class="learn-more">Read More</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- News Block -->
-				<div class="news-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<a href="blog-detail.html"><img src="assets/images/resource/news-6.jpg" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<ul class="post-info">
-								<li>Design</li>
-								<li>2022, Feb 25</li>
-							</ul>
-							<h5><a href="blog-detail.html">Meet Touch Design Mobile Interfaces New Smas</a></h5>
-							<a href="blog-detail.html" class="learn-more">Read More</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
 	<!-- End News Section -->
 
 	<!-- Footer Style Two -->
-    <footer class="footer-style-two">
-    	<div class="auto-container">
-        	<!-- Widgets Section -->
-            <div class="widgets-section">
-            	<div class="row clearfix">
 
-                    <!-- Column -->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-						<div class="row clearfix">
+@endsection
 
-                        	<!-- Footer Column -->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget logo-widget">
-									<div class="logo">
-										<a href="index.html"><img src="assets/images/logo-5.png" alt="" /></a>
-									</div>
-									<div class="text">Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna</div>
-									<!-- Subscribe Form -->
-									<div class="subscribe-form">
-										<form method="post" action="contact.html">
-											<div class="form-group">
-												<input type="email" name="email" value="" placeholder="Enter Email" required>
-												<button type="submit" class="submit-btn"><span class="icon flaticon-right-arrow-2"></span></button>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-
-							<!-- Footer Column -->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget links-widget">
-									<h5>Services</h5>
-									<ul class="nav-list">
-										<li><a href="#">Web Design</a></li>
-										<li><a href="#">SEO Optimizations</a></li>
-										<li><a href="#">Web Development</a></li>
-										<li><a href="#">Business Analysis</a></li>
-										<li><a href="#">Market Research</a></li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-					<!-- Column -->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-						<div class="row clearfix">
-
-							<!-- Footer Column -->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget links-widget">
-									<h5>Quick Links</h5>
-									<ul class="nav-list">
-										<li><a href="#">Services</a></li>
-										<li><a href="#">Help Center</a></li>
-										<li><a href="#">Partners</a></li>
-										<li><a href="#">Privacy Policy</a></li>
-										<li><a href="#">Need a Career?</a></li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- Footer Column -->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget info-widget">
-									<h5>Get In Touch</h5>
-									<ul class="list-style-one style-two">
-										<li><span class="icon flaticon-email"></span> support@gmail.com</li>
-										<li><span class="icon flaticon-telephone"></span> Call : +012 (345) 678</li>
-										<li><span class="icon flaticon-map"></span>55 Main Street, New York</li>
-									</ul>
-									<!-- Social Box -->
-									<ul class="social-box">
-										<li><a href="https://www.facebook.com/" class="fa fa-facebook-f"></a></li>
-										<li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
-										<li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
-										<li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<!-- Footer Bottom -->
-			<div class="footer-bottom">
-				<div class="copyright">&copy; {{\Carbon\Carbon::now()->year()}} <a href="https://vicsystems.com.ng">vicSystems Technologies Ltd..</a> All rights reserved</div>
-			</div>
-
-		</div>
-	</footer>
-	<!-- End Footer Style Two -->
-
-</div>
-<!-- End PageWrapper -->
-
-<!-- Search Popup -->
-<div class="search-popup">
-	<button class="close-search style-two"><span class="flaticon-cancel-1"></span></button>
-	<button class="close-search"><span class="flaticon-up-arrow"></span></button>
-	<form method="post" action="blog.html">
-		<div class="form-group">
-			<input type="search" name="search-field" value="" placeholder="Search Here" required="">
-			<button type="submit"><i class="fa fa-search"></i></button>
-		</div>
-	</form>
-</div>
-<!-- End Header Search -->
-
-<!-- Scroll To Top -->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
-
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-
-<!-- Revolution Slider -->
-<script src="assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="assets/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="assets/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="assets/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="assets/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="assets/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="assets/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="assets/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script src="assets/plugins/revolution/js/main-slider-script.js"></script>
-<!-- For Js Library -->
-
-<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="assets/js/jquery.fancybox.js"></script>
-<script src="assets/js/appear.js"></script>
-<script src="assets/js/parallax.min.js"></script>
-<script src="assets/js/tilt.jquery.min.js"></script>
-<script src="assets/js/jquery.paroller.min.js"></script>
-<script src="assets/js/owl.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/validate.js"></script>
-<script src="assets/js/nav-tool.js"></script>
-<script src="assets/js/jquery-ui.js"></script>
-<script src="assets/js/script.js"></script>
-
-</body>
-</html>
