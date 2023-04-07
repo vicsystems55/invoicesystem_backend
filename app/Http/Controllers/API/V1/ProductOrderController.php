@@ -1,16 +1,17 @@
 <?php
 
 namespace App\Http\Controllers\API\V1;
-use App\Http\Controllers\Controller;
-
 use Paystack;
 
-
 use Carbon\Carbon;
+
+
 use App\Models\User;
 use App\Models\Invoice;
 use App\Models\ProductOrder;
+use Illuminate\Http\Request;
 use App\Mail\OrderPlacedMail;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\StoreProductOrderRequest;
 use App\Http\Requests\UpdateProductOrderRequest;
@@ -22,27 +23,40 @@ class ProductOrderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         //
-        $product_orders = ProductOrder::with('users')->with('invoice')->latest()->get();
 
-        // $total_sales_amount = ProductOrder::with('invoice');
-        $total_sales_amount = Invoice::whereIn('id', ProductOrder::pluck('invoice_id'))->get()->sum('total_amount');
+        if ($request->has('user_id')) {
+            # code...
 
-        // return $total_sales_amount;
+            $product_orders = ProductOrder::where('user_id', $request->user_id)->with('invoice')->latest()->get();
 
-        $total_customers = User::get()->count();
+            return $product_orders;
 
-        $invoices = Invoice::where('total_amount','>', 0)->get()->count();
+        }else{
 
-        return $data=[
-            'product_orders' => $product_orders,
-            'total_customers' => $total_customers,
-            'invoices'  => $invoices,
-            'total_sales_amount' => $total_sales_amount,
-            'timestamp' => Carbon::now()->format('d M, Y : h:m:s')
-        ];
+            $product_orders = ProductOrder::with('users')->with('invoice')->latest()->get();
+
+            // $total_sales_amount = ProductOrder::with('invoice');
+            $total_sales_amount = Invoice::whereIn('id', ProductOrder::pluck('invoice_id'))->get()->sum('total_amount');
+
+            // return $total_sales_amount;
+
+            $total_customers = User::get()->count();
+
+            $invoices = Invoice::where('total_amount','>', 0)->get()->count();
+
+            return $data=[
+                'product_orders' => $product_orders,
+                'total_customers' => $total_customers,
+                'invoices'  => $invoices,
+                'total_sales_amount' => $total_sales_amount,
+                'timestamp' => Carbon::now()->format('d M, Y : h:m:s')
+            ];
+
+        }
+
     }
 
     /**
