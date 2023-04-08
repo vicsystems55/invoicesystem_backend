@@ -40,24 +40,42 @@ class ProductController extends Controller
 
         // return $request->all();
 
-        $doc = $request->file('product_image');
+        if ($request->has('type')) {
 
 
-        $new_name = rand().".".$doc->getClientOriginalExtension();
+            $doc = $request->file('product_image');
 
-        $file1 = $doc->move(public_path('products'), $new_name);
 
-        $product = Product::create([
-            'name' => $request->name,
-            'description' => $request->description,
-            'img_url' => asset('products').'/'.$new_name,
-            'price' => $request->price,
-            'user_id' => $request->user_id,
-            'status' => 'active',
-            'discount' => 0,
-        ]);
+            $new_name = rand().".".$doc->getClientOriginalExtension();
 
-        return $product;
+            $file1 = $doc->move(public_path('products'), $new_name);
+
+            return Product::find($request->productId)->update([
+                'img_url' => asset('products').'/'.$new_name
+            ]);
+
+
+        }else{
+
+            $doc = $request->file('product_image');
+
+
+            $new_name = rand().".".$doc->getClientOriginalExtension();
+
+            $file1 = $doc->move(public_path('products'), $new_name);
+
+            $product = Product::create([
+                'name' => $request->name,
+                'description' => $request->description,
+                'img_url' => asset('products').'/'.$new_name,
+                'price' => $request->price,
+                'user_id' => $request->user_id,
+                'status' => 'active',
+                'discount' => 0,
+            ]);
+
+            return $product;
+        }
 
 
 
